@@ -46,53 +46,67 @@ table {
 	border-spacing: 0;
 }
 
+/*LUEGO DE RESETEAR LOS ESTILOS POR DEFECTO, LE DOY LOS PROPIOS A MIS HTML*/
 body{
-	background-color: #474747;
+	background-color: #474747; /*fondo gris*/
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
-.img-responsive{
-	display: block;
+.logo{
+	display: block; /*estilos del logo*/
 	max-width: 35%;
 	height: auto;
 	margin: auto;
 	margin-top: 80px;
 }
 
-.trans-lab{
+.trans-lab{ /*texto bajo el logo*/
 	padding-top: 15px;
 	color: #f6a800;
 	font-size: 28px;
 	font-weight: 700;
 }
 
-/*
-form{
-	border-radius: 5px;
-	border: none;
-}
-*/
-.form-control, .btn-block{
+/*estilos formulario*/
+.form-control, .btn-block{ 
 	border-radius: 0;
 	border: none;
 }
+
+.form-control{
+	padding: 16px 12px 16px 48px;
+	height: inherit;
+	border: none;
+	font-size: 14px;
+	font-weight: 300;
+	background-size: 16px;
+	background-repeat: no-repeat;
+	background-position: 16px;
+}
+
 .datos{
 	padding-top: 20px;
 }
 
 .btn-block{
 	background-color: #f6a800;
+	border-color: #f6a800;
+	border-radius: 0;
 	text-transform: uppercase;
 	color: #3e3f41;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
+	margin-top: -16px;
+	letter-spacing: 1px;
+	height: inherit;
+	padding: 16px
 }
 
-.btn-primary:active{
-	color:  #3e3f41;
+.btn-primary:hover{
+	background-color:  #3e3f41;
 }
 
-#usuario{
+#usuario{ /*input correo*/
 	padding-left: 40px;
 	background-image: url('../img/user.png');
 	background-size: 40px;
@@ -100,11 +114,45 @@ form{
 	background-position: left;
 }
 
-#contraseña{
+#contraseña{/*input contraseña*/
 	padding-left: 40px;
 	background-image: url('../img/lock.png');
 	background-size: 40px;
 	background-repeat: no-repeat;
 	background-position: left;
+	margin-top: -16px;
 }
 
+.wrong{
+	display: none;
+	color: red;
+}
+
+.olvido {
+    color: #fff;
+	font-weight: lighter;
+	line-height: 3;
+	letter-spacing: 1px;
+}
+
+.olvido a {
+    color: #fff;
+}
+
+footer{
+	position: fixed;
+    bottom: 10px;
+    width: 100%;
+    padding: 24px 0;
+}
+
+footer .registro {
+	color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+footer a {
+	color: #F6A800;
+    font-weight: 600;
+}

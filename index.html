@@ -1,4 +1,3 @@
-<!-- Wowowoyipiyouuu tu código acá -->
 <!DOCTYPE html>
 <html lang="es_CL">
 <head>
@@ -21,27 +20,47 @@
 	<header>
 		<!--logo-->
 		<div class="container">
-			<img class="img-responsive" src="docs/imagen.png" alt="">
+			<img class="img-responsive logo" src="docs/imagen.png" alt="">
 			<h1 class="trans-lab text-center">TRANS-LAB</h1>
 		</div>
-
+	</header>
+	<section id="inicio">
 		<div class="container datos">
-			<div class="row col-md-6 col-md-offset-3">
-				<form>
+			<div class="row">
+				<form class="col-xs-12">
 					<div class="form-group">
 						<input id="usuario" type="text" class="form-control" placeholder="Correo electrónico" required="" autofocus="">
-						<input id="contraseña" type="password" class="form-control" placeholder="Contraseña" required="">
-						<button class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
+						<p id="mail-malo" class="wrong">Email incorrecto</p>
 					</div>
+					<div class="form-group">
+						<input id="contraseña" type="password" class="form-control" placeholder="Contraseña" required="">
+						<p id="password-malo" class="wrong">Contraseña incorrecta</p>
+					</div>
+					<a href="#" id="botonInicio"><button class="btn btn-primary btn-lg btn-block">Iniciar sesión</button></a>
+					<p class="olvido"><a href="#">¿Olvidaste tu contraseña?</a></p>
 				</form>
 			</div>
 		</div><!-- /.container -->
+	</section> 
+
+	<!-- Footer primera làmina-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p class="registro">¿No tienes cuenta? <a href="#">Regístrate</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
-	</header>
+	
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Bootstrap Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	</html>
+	<script src="js/main.js"></script>
+</body>
+</html>
