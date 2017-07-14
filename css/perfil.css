@@ -152,3 +152,10 @@ ul{
 .calcularbtn{
   margin-left: 100px;
 }
+
+.caja-saldo{
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin: 40px;
+}
