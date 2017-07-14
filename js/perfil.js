@@ -14,7 +14,7 @@ $(document).ready(function() {   //menu desplegable
 		console.log (numeroBip);
 
 		$.ajax({
-			url : 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + numeroBip,
+			url : 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + numeroBip,
 			type : 'GET',
 			datatype : 'json',
 		})
