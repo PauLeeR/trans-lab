@@ -1,0 +1,107 @@
+body {
+  padding-top: 60px;
+  position: relative;
+  background-color: #e8e8ed;
+}
+
+@media screen and (max-width: 768px) {
+  .side-collapse-container{
+    width:100%;
+    position:relative;
+    left: 80px;
+    transition:left .4s;
+    padding-left: 15px;
+  }
+  .side-collapse-container.out{
+    left: 200px;
+  }
+  .side-collapse {
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    position: fixed;
+    overflow: hidden;
+    transition: width .4s;
+    background-color: #ffffff;
+  }
+  .side-collapse.in {
+    width:0;
+  }
+}
+
+.navbar-header{
+  background-color: #3e3f41;
+}  
+
+.navbar-toggle {
+ border-color: none;
+ background-color: none;
+ border-radius: none;
+ border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color: black;
+}
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a:visited {
+    color: transparent;
+    /*background-color: transparent;*/
+}
+
+.navbar-brand{ /*logo Trans-Lab centrado*/
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  float: none;
+  height: inherit;
+}
+.navbar-brand:hover{
+  color: #ffffff;
+}
+
+.navbar-nav>li>a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.navbar-nav>li>a:hover{
+  background-color: none;
+}
+
+.fa-2x { /*estilos íconos amarillos/opciones*/
+  text-align: center;
+  color: #f6a800;
+}
+
+.btn-primary {
+  border-color: #F6A800;
+  background-color: #F6A800;
+  border-radius: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 17px;
+}
+
+ul{
+  top: 180px;
+  text-decoration: none;
+  list-style: none; /*saca viñetas de la lista!*/
+}
+
+.iconos{   /*span creado para contener los ìconos */
+  color: #F6A800;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+
+}

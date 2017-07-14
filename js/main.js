@@ -21,22 +21,28 @@ if(email == "" || !validateEmail.test(email) || email.indexOf('@') == -1 ){
             //return false;  
         }
         else{
-            $("#password-malo").hide();
+            $("#password-malo").hide();//NO ESTA FUNCIONANDO LA VALIDACION DE LOS NUMEROS, PASA IGUAL A LA OTRA LAMINA
+            e.preventDefault();
+            document.location.href = "menu.html";   
         }
+
+        //$("#botonInicio").click (function(){ //QUIERO QUE ME LLEVE AL OTRO HTML, NO SÈ CÒMO!!!¿??
+          //  document.location.href = "menu.html";
+      });
+});
 
 //local storage no sé como hacerlo en jQuery =/
-        function guardarDatos(){
-            localStorage.email = document.getElementById("usuario").value;
-            localStorage.password = document.getElementById("contraseña").value;
-        }
-        function recuperarDatos(){
-            if((localStorage.email != undefined) && (localStorage.password != undefined)){
-                document.getElementById("botonInicio").innerHTML = "Correo electrónico: " + localStorage.email + "<br/> Contraseña: " + localStorage.password;
-            }
-            else{
-                document.getElementById("botonInicio").innerHTML = "No has introducido tu nombre y tu password";
-            }
-        } 
+function guardarDatos(){
+    localStorage.email = document.getElementById("usuario").value;
+    localStorage.password = document.getElementById("contraseña").value;
+}
+function recuperarDatos(){
+    if((localStorage.email != undefined) && (localStorage.password != undefined)){
+        document.getElementById("botonInicio").innerHTML = "Correo electrónico: " + localStorage.email + "<br/> Contraseña: " + localStorage.password;
+    }
+    else{
+        document.getElementById("botonInicio").innerHTML = "No has introducido tu nombre y tu password";
+    }
+} 
 
-    });
-});
+
