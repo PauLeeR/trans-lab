@@ -28,7 +28,7 @@
 			<div class="navbar-inverse side-collapse in">
 				<nav role="navigation" class="navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#"><span class="iconos"><i class="fa fa-usd fa-2x" aria-hidden="true"></i>	
+						<li><a href="saldo.html"><span class="iconos"><i class="fa fa-usd fa-2x" aria-hidden="true"></i>	
 						</span>Ver saldo</a></li>
 						<li><a href="#"><span class="iconos"><i class="fa fa-th fa-2x" aria-hidden="true"></i></span>Calcular Tarifa</a></li>
 						<li><a href="perfil.html"><span class="iconos"><i class="fa fa-user fa-2x" aria-hidden="true"></i></span>Perfil</a></li>
@@ -43,38 +43,33 @@
 
 	<!--perfil de usuario-->
 	<!--seccion foto y correo-->
-	<section id="profile">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-offset-2 col-xs-8">
-					<img src="img/profile.jpg" alt="" class="img-responsive">
-				</div>
-				<div class="col-xs-12 text-center">
-					<h3 class="mail-usuario">usuario@user.com</h3>
+	<div class="container user">
+		<div class="row text-center">
+			<div class="col-xs-offset-2 col-xs-8">
+				<img src="img/profile.jpg" alt="" class="img-responsive img-circle">
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container lowprofile">  
+		<div class="row">
+			<div class="col-xs-12 text-center">
+			<p class="form-control mail">user@user.com</p>
+				<input type="text" class="form-control cardnumber" placeholder="Número Tarjeta">
+				<button type="button" class="btn btn-default btn-white" id="card">AGREGAR TARJETA</button>
+			</div>   
+		</div>
+	</div> <!-- fin sección-->
+	<div class="row">
+			<div class="col-xs-12">
+				<div id="contenedor-bips">
+					<!-- div vacío para guardar los números de las distintas bips -->
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--seccion tarjetas-->
-	<section class="bips">
-		<div class="container">
-			<div class="row">
-				<form class="col-xs-12">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Número Tarjeta">
-						<button type="submit" class="btn btn-default" id="card">AGREGAR TARJETA</button>
-					</div>
-				</form>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<div id="contenedor-bips">
-						<!-- div vacío para guardar los números de las distintas bips -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	</div>
+
 
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
