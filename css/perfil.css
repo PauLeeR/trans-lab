@@ -153,7 +153,6 @@ ul{
   font-size: 20px;
   width: 50%;
   margin-top: 50px;
-  margin-left: 90px;
 }
 
 .calcularbtn{
@@ -168,12 +167,11 @@ ul{
 }
 
 .ve-tu-saldo{
-  width: 350px;
+  width: 50%;
   height: 100px;
   /*background-color: #F6A800; muestra siempre el fondo de ese color, no solamente cuando  muestra el saldo =(*/
   color: darkgoldenrod;
   display: block;
-  margin-left: 50px;
   margin-top: 90px;
 }
 
@@ -188,12 +186,11 @@ ul{
 /*estilos cajitas nuevas creadas desde el JS*/
 /*cajitas de ver saldo y calcular tarifa*/
 .wrapper, .saldoFinal{
-  width: 280px;
+  width: 100%;
   height: 100px;
   background-color: #F6A800; 
   color: #3e3f41;
   display: block;
-  margin-left: 60px;
   margin-top: 60px;
   margin-bottom: 5px;
 }

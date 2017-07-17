@@ -66,15 +66,15 @@ $(document).ready(function() {   //menu desplegable
 
 
 		function conocerTarifa(response){
-		$("#showTarifa").empty();	
+		$("#showTarifa").empty();
 		var removePeso = response.saldoTarjeta.replace("$","");//reemplazo el signo peso por un string vacío para que considere sólo los números
 		var removePunto = removePeso.replace(".",""); //también saco el punto
 		var saldo = parseInt(removePunto); //y el monto lo convertimos en un número (entero)
 		console.log (saldo);
 		var tarifaFinal = saldo - tramos  //monto que queda en la tarjeta después de calcular un viaje según el tramo/horario
-		$('#showTarifa').append("<div class='wrapper text-center costo'>COSTO PASAJE"+
+		$('#showTarifa').append("<div class='wrapper col-xs-12 text-center costo'>COSTO PASAJE"+
 			"<div class='saldoup'>" + "$" + tramos + "</div>"+"</div>"+
-			"<div class='saldoFinal text-center final'>SALDO FINAL"+
+			"<div class='saldoFinal col-xs-12 text-center final'>SALDO FINAL"+
 			"<div class='saldoFinalUp'>" + "$" + tarifaFinal + "</div>"+"</div>");
 		}
 

@@ -1,7 +1,7 @@
 //validación e-mail y contraseña. Creo dos variables con las expresiones regulares 
 //Una para el correo y otra para verificar solo números para la contraseña
 var validateEmail = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
-var validatePassword = new RegExp("^([0-9]{8})$"); //HABIA 1 PROBLEMA CON LA VALIDACION Q PERMITIA NUMEROS PERO DE 1 A 8 DIGITOS, AHORA SÍ
+var validatePassword = new RegExp("^([0-9]{1,8})$"); //HABIA 1 PROBLEMA CON LA VALIDACION Q PERMITIA NUMEROS PERO DE 1 A 8 DIGITOS, AHORA SÍ
 //basado en el trabajo grupal por squad "Lyft App y en la web
 $(document).ready(function () {
     $("#botonInicio").on("click", function(e){ //boton iniciar sesión
