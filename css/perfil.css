@@ -6,8 +6,8 @@ body {
 /*estilos de la barra lateral desplegable*/
 @media screen and (max-width: 768px) {
   .side-collapse-container{
-    width:100%;
-    position:relative;
+    width: 100%;
+    position: relative;
     left: 80px;
     transition:left .4s;
     padding-left: 15px;
@@ -159,3 +159,23 @@ ul{
   margin: auto;
   margin: 40px;
 }
+
+.ve-tu-saldo{
+  width: 350px;
+  height: 100px;
+  /*background-color: #F6A800;*/
+  color: darkgoldenrod;
+  display: block;
+  margin-left: 50px;
+  margin-top: 90px;
+}
+
+.ve-tu-saldo>h4{
+  font-size: 16px;
+}
+
+#saldo-total{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
