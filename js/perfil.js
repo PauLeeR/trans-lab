@@ -32,7 +32,7 @@ $(document).ready(function() {   //menu desplegable
 		function conocerSaldo(response){ //conocer el saldo de tu tarjeta bip
 			var saldo = response.saldoTarjeta;
 
-			$(".ve-tu-saldo").empty(); //impide que se imprima màs de una vez el monto/saldo en la pantalla (similar a lo que hacía +=) 
+			$(".ve-tu-saldo").empty(); //impide que se imprima màs de una vez el monto/saldo en la pantalla  
  
 			var text = ("<h4>SALDO TOTAL</h4><div class='saldo'><p id='saldo-total'>" + "" + saldo +"</p></div>");
 
@@ -66,6 +66,7 @@ $(document).ready(function() {   //menu desplegable
 
 
 		function conocerTarifa(response){
+		$("#showTarifa").empty();	
 		var removePeso = response.saldoTarjeta.replace("$","");//reemplazo el signo peso por un string vacío para que considere sólo los números
 		var removePunto = removePeso.replace(".",""); //también saco el punto
 		var saldo = parseInt(removePunto); //y el monto lo convertimos en un número (entero)
