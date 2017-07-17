@@ -48,9 +48,15 @@ body {
   color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>li>a:visited {
+.navbar-inverse .navbar-nav>li>a:hover {
   color: transparent;
-  /*background-color: transparent;*/
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a:visited,
+.navbar-inverse .navbar-nav>li>a:active {
+  color: transparent;
+  background-color: transparent;
 }
 
 .navbar-brand{ /*logo Trans-Lab centrado*/
@@ -147,6 +153,7 @@ ul{
   font-size: 20px;
   width: 50%;
   margin-top: 50px;
+  margin-left: 80px;
 }
 
 .calcularbtn{
@@ -163,7 +170,7 @@ ul{
 .ve-tu-saldo{
   width: 350px;
   height: 100px;
-  /*background-color: #F6A800;*/
+  /*background-color: #F6A800; muestra siempre el fondo de ese color, no solamente cuando  muestra el saldo =(*/
   color: darkgoldenrod;
   display: block;
   margin-left: 50px;
@@ -178,4 +185,28 @@ ul{
   font-size: 30px;
   font-weight: bolder;
 }
+/*estilos cajitas nuevas creadas desde el JS*/
+/*cajitas de ver saldo y calcular tarifa*/
+.wrapper, .saldoFinal{
+  width: 280px;
+  height: 100px;
+  background-color: #F6A800; 
+  color: #3e3f41;
+  display: block;
+  margin-left: 30px;
+  margin-top: 60px;
+  margin-bottom: 5px;
+}
 
+.saldoup, .saldoFinalUp{
+  font-size: 36px;
+  font-weight: bolder;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.costo, .final{
+  color: grey;
+  font-size: 20px;
+  font-weight: bold;
+}

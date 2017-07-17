@@ -124,16 +124,19 @@ body{
 }
 
 .wrong{ 
-	display: none;
-	color: red;
+  display: none;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
 }
 
 .olvido {
     color: #fff;
 	font-weight: lighter;
 	line-height: 3;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 }
+
 
 .olvido a {
     color: #fff;

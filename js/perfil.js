@@ -32,9 +32,9 @@ $(document).ready(function() {   //menu desplegable
 		function conocerSaldo(response){ //conocer el saldo de tu tarjeta bip
 			var saldo = response.saldoTarjeta;
 
-			$(".ve-tu-saldo").empty();
-
-			var text = ("<h4>SALDO TOTAL</h4><div class='saldo'><p id='saldo-total'>" + saldo +"</p></div>");
+			$(".ve-tu-saldo").empty(); //impide que se imprima màs de una vez el monto/saldo en la pantalla (similar a lo que hacía +=) 
+ 
+			var text = ("<h4>SALDO TOTAL</h4><div class='saldo'><p id='saldo-total'>" + "" + saldo +"</p></div>");
 
 			$(".ve-tu-saldo").append(text);
 
@@ -71,14 +71,14 @@ $(document).ready(function() {   //menu desplegable
 		var saldo = parseInt(removePunto); //y el monto lo convertimos en un número (entero)
 		console.log (saldo);
 		var tarifaFinal = saldo - tramos  //monto que queda en la tarjeta después de calcular un viaje según el tramo/horario
-		$('#showTarifa').append("<div class='saldo'>COSTO PASAJE</div>"+
-			"<div class='saldoup'>" + tramos + "</div>"+
-			"<div class='saldoFinal'>SALDO FINAL</div>"+
-			"<div class='saldoFinalUp'>" + tarifaFinal + "</div>");
+		$('#showTarifa').append("<div class='wrapper text-center costo'>COSTO PASAJE"+
+			"<div class='saldoup'>" + "$" + tramos + "</div>"+"</div>"+
+			"<div class='saldoFinal text-center final'>SALDO FINAL"+
+			"<div class='saldoFinalUp'>" + "$" + tarifaFinal + "</div>"+"</div>");
 		}
 
 		function wrong(){
-		$(".ve-tu-saldo").empty();
+		$(".ve-tu-saldo").empty(); 
 		$(".ve-tu-saldo").append("<h4>SALDO TOTAL</h4><div class='saldo'><p id='saldo-total'>Tarjeta inválida</p></div>");
 
 		}

@@ -26,12 +26,10 @@ if(email == "" || !validateEmail.test(email) || email.indexOf('@') == -1 ){
             document.location.href = "menu.html";   
         }
 
-        //$("#botonInicio").click (function(){ //QUIERO QUE ME LLEVE AL OTRO HTML, NO SÈ CÒMO!!!¿??
-          //  document.location.href = "menu.html";
       });
 });
 
-//local storage no sé como hacerlo en jQuery =/
+//local storage no sé como hacerlo en jQuery =/   NOT SURE IF IT WORKS
 function guardarDatos(){
     localStorage.email = document.getElementById("usuario").value;
     localStorage.password = document.getElementById("contraseña").value;
